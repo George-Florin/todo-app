@@ -13,5 +13,17 @@ export default function Todo() {
   if (loading) return <Spinner />;
   if (error) return <p>Error</p>;
 
-  return <div>Todo</div>;
+  return (
+    <>
+      {!loading && !error && (
+        <div className="todo-container">
+          <Link to="/" className="back-btn">
+            Back
+          </Link>
+          <h1>{data.todo.title}</h1>
+          <p>{data.todo.description}</p>
+        </div>
+      )}
+    </>
+  );
 }

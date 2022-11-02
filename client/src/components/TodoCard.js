@@ -1,4 +1,5 @@
 import React from "react";
+import Checkbox from "./Checkbox";
 import DeleteButton from "./DeleteButton";
 
 export default function TodoCard({ todo }) {
@@ -7,10 +8,18 @@ export default function TodoCard({ todo }) {
       <div>
         <div className="card">
           <div className="card-body">
-            <h5>{todo.title}</h5>
-            <a href={`/todos/${todo.is}`}>View</a>
-            <DeleteButton todoId={todo.id} />
-            <p className="small">{todo.description}</p>
+            <div className="card-container">
+              <h2>{todo.title}</h2>
+              <br />
+              <h5>{todo.description}</h5>
+            </div>
+            <div className="card-btn-container">
+              <Checkbox />
+              <a className="view-btn" href={`/todos/${todo.is}`}>
+                View
+              </a>
+              <DeleteButton todoId={todo.id} />
+            </div>
           </div>
         </div>
       </div>
