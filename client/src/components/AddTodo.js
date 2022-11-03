@@ -26,7 +26,7 @@ export default function AddTodo() {
     e.preventDefault();
 
     if (title === "") {
-      return alert("Please fill in all the fields");
+      return alert("Please fill in the required fields");
     }
 
     addTodo(title, description);
@@ -76,7 +76,7 @@ export default function AddTodo() {
                 <div className="modal-body">
                   <form onSubmit={onSubmit}>
                     <div className="mb-3">
-                      <label className="form-label">Title</label>
+                      <label className="form-label">Title*</label>
                       <input
                         type="text"
                         className="form-control"

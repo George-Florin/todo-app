@@ -1,6 +1,7 @@
 import React from "react";
 import Checkbox from "./Checkbox";
 import DeleteButton from "./DeleteButton";
+import EditTodo from "./EditTodo";
 
 export default function TodoCard({ todo }) {
   return (
@@ -14,6 +15,7 @@ export default function TodoCard({ todo }) {
               <h5>{todo.description}</h5>
             </div>
             <div className="card-btn-container">
+              <EditTodo />
               <Checkbox />
               <a className="view-btn" href={`/todos/${todo.is}`}>
                 View

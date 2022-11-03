@@ -19,7 +19,7 @@ export default function Todos() {
           ))}
         </div>
       ) : (
-        <p>No tasks</p>
+        <p className="no-tasks">No tasks</p>
       )}
     </>
   );
