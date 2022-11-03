@@ -25,7 +25,7 @@ export default function AddTodo() {
   const onSubmit = (e) => {
     e.preventDefault();
 
-    if (title === "" || description === "") {
+    if (title === "") {
       return alert("Please fill in all the fields");
     }
 
@@ -86,7 +86,9 @@ export default function AddTodo() {
                       />
                     </div>
                     <div className="mb-3">
-                      <label className="form-label">Description</label>
+                      <label className="form-label">
+                        Description (optional)
+                      </label>
                       <textarea
                         className="form-control"
                         id="description"

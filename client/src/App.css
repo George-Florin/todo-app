@@ -109,3 +109,28 @@
   display: flex;
   margin: 10px
 }
+
+.error-page {
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+}
+
+.error {
+  align-self: center;
+  color: red;
+  position: relative;
+  width: 90px;
+  min-height: 90px;
+}
+
+.back-btn {
+  text-decoration: none;
+  color: black;
+  width: 70px;
+  padding: 10px;
+  border: solid black;
+  border-radius: 7px;
+}
